@@ -4,8 +4,14 @@ import {PostsList} from './features/posts/PostsList'
 function App() {
     return (
         <div className='container'>
-            <AddPostForm />
-            <PostsList />
+            <div className='distance'>
+                <AddPostForm />
+            </div>
+            
+            <div className='distance'>
+                <PostsList />
+            </div>
+            
         </div>
     )
 }
