@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { addNewPost } from './postsSlice'
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 
 export const AddPostForm = () => {
     const [title, setTitle] = useState('')
@@ -33,8 +35,11 @@ return (
     <section>
         <h2>Add a New Post</h2>
         <form>
-            <label htmlFor="postTitle"> Post Title:</label>
-            <input 
+        
+            <TextField 
+                margin="normal"
+                fullWidth
+                label="Post Title"
                 placeholder="Enter your title"
                 type="text"
                 id="postTitle"
@@ -42,17 +47,21 @@ return (
                 value={title}
                 onChange={onTitleChanged} 
             />
-            <label htmlFor="postContent">Content:</label>
-            <textarea
+            <TextField
+                margin="normal"
+                fullWidth
+                label="Post Content"
+                multiline
+                rows={4}
                 placeholder="Enter your content"
                 id="postContent"
                 name="postContent"
                 value={content}
                 onChange={onContentChanged} 
             />
-<button type="button" onClick={onSavePostClicked} disabled={!canSave}>
+<Button variant="contained" onClick={onSavePostClicked} disabled={!canSave}>
     Save Post
-</button>
+</Button>
         </form>
         {error && <div>{error}</div>}
     </section>
