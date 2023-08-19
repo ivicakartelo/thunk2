@@ -45,16 +45,16 @@ const PostExcerpt = ({ post }) => {
       const card = (
         <React.Fragment>
           <CardContent>
-            <Typography sx={{ fontSize: 14, fontFamily: 'Dancing Script', cursive }} color="text.secondary" gutterBottom>
+            <Typography sx={{ fontSize: 14, fontFamily: 'Open Sans', cursive }} color="text.secondary" gutterBottom>
               Word of the Day
             </Typography>
-            <Typography variant="h5" component="div" style={{ fontFamily: 'Dancing Script', cursive }}>
+            <Typography variant="h5" component="div" style={{ fontFamily: 'Open Sans', cursive }}>
               be*nev*o*lent
             </Typography>
-            <Typography sx={{ mb: 1.5, fontFamily: 'Dancing Script', cursive }} color="text.secondary">
+            <Typography sx={{ mb: 1.5, fontFamily: 'Open Sans', cursive }} color="text.secondary">
               adjective
             </Typography>
-            <Typography variant="body2" style={{ fontFamily: 'Dancing Script', cursive }}>
+            <Typography variant="body2" style={{ fontFamily: 'Open Sans', cursive }}>
               well meaning and kindly.
               <br />
               {'"a benevolent smile"'}
@@ -70,16 +70,16 @@ const PostExcerpt = ({ post }) => {
       const card = (
         <React.Fragment>
           <CardContent>
-            <Typography sx={{ fontSize: 14, fontFamily: 'Dancing Script', 'cursive' }} color="text.secondary" gutterBottom>
+            <Typography sx={{ fontSize: 14, fontFamily: 'Open Sans', 'cursive' }} color="text.secondary" gutterBottom>
               Word of the Day
             </Typography>
-            <Typography variant="h5" component="div" style={{ fontFamily: 'Dancing Script', 'cursive' }}>
+            <Typography variant="h5" component="div" style={{ fontFamily: 'Open Sans', 'cursive' }}>
               be*nev*o*lent
             </Typography>
-            <Typography sx={{ mb: 1.5, fontFamily: 'Dancing Script', 'cursive' }} color="text.secondary">
+            <Typography sx={{ mb: 1.5, fontFamily: 'Open Sans', 'cursive' }} color="text.secondary">
               adjective
             </Typography>
-            <Typography variant="body2" style={{ fontFamily: 'Dancing Script', 'cursive' }}>
+            <Typography variant="body2" style={{ fontFamily: 'Open Sans', 'cursive' }}>
               well meaning and kindly.
               <br />
               {'"a benevolent smile"'}
@@ -97,16 +97,16 @@ const PostExcerpt = ({ post }) => {
       const card = (
         <React.Fragment>
           <CardContent>
-            <Typography sx={{ fontSize: 14, fontFamily: 'Dancing Script' }} color="text.secondary" gutterBottom>
+            <Typography sx={{ fontSize: 14, fontFamily: 'Open Sans' }} color="text.secondary" gutterBottom>
               Published
             </Typography>
-            <Typography variant="h5" component="div" style={{ fontFamily: 'Dancing Script' }}>
+            <Typography variant="h2" component="div" style={{ fontFamily: 'Open Sans' }}>
             {post.title}
             </Typography>
-            <Typography sx={{ mb: 1.5, fontFamily: 'Dancing Script' }} color="text.secondary">
+            <Typography sx={{ mb: 1.5, fontFamily: 'Open Sans' }} color="text.secondary">
               Author
             </Typography>
-            <Typography variant="body2" style={{ fontFamily: 'Dancing Script' }}>
+            <Typography variant="body1" style={{ fontFamily: 'Open Sans' }}>
             {paragraphs.map((paragraph, index) => (
             <p key={index} dangerouslySetInnerHTML=
             {{ __html: paragraph }}></p>
@@ -162,7 +162,7 @@ postStatus === 'loading' ? (
 
     return (
         <section>
-            <h2>Posts</h2>
+            <Typography variant="h2" component="div" style={{ fontFamily: 'Open Sans' }}>Posts </Typography>
             {content}
         </section>
     )

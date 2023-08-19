@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { addNewPost } from './postsSlice'
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 
 export const AddPostForm = () => {
     const [title, setTitle] = useState('')
@@ -33,7 +34,7 @@ const onSavePostClicked = async () => {
 
 return (
     <section>
-        <h2>Add a New Post</h2>
+        <Typography variant="h2" component="div" style={{ fontFamily: 'Open Sans' }}>Add a New Post</Typography>
         <form>
         
             <TextField 

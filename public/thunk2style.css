@@ -2,7 +2,7 @@ body {
   /* font-family: 'Dancing Script', cursive; */
   /* font-family: 'Pacifico', cursive; */
   font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 18;
   line-height: 1.5;
   }
@@ -15,4 +15,9 @@ body {
 
   .distance {
     margin-top: 80px;
+  }
+
+  h2 {
+    font-size: 4rem;
+    font-weight: 400;
   }
