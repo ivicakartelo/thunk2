@@ -90,7 +90,9 @@ const PostExcerpt = ({ post }) => {
           </CardActions>
         </React.Fragment>
       );
-  */    
+  */   
+ 
+      const paragraphs = post.content.split('\n');
 
       const card = (
         <React.Fragment>
@@ -105,9 +107,10 @@ const PostExcerpt = ({ post }) => {
               Author
             </Typography>
             <Typography variant="body2" style={{ fontFamily: 'Dancing Script' }}>
-            {post.content}
-              <br />
-              {'"a benevolent smile"'}
+            {paragraphs.map((paragraph, index) => (
+            <p key={index} dangerouslySetInnerHTML=
+            {{ __html: paragraph }}></p>
+  ))}
             </Typography>
           </CardContent>
           <CardActions>
