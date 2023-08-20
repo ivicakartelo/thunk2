@@ -16,6 +16,7 @@ export const AddPostForm = () => {
 
 const canSave = Boolean(title) && Boolean(content) && Boolean(addRequestStatus === 'idle')
 const onSavePostClicked = async () => {
+    
     if (canSave) {
         try {
             setAddRequestStatus('pending')
@@ -40,6 +41,7 @@ return (
         <Typography variant="h2" component="div" style={{ fontFamily: 'Open Sans' }}>Add a New Post</Typography>
         <form>
             <TextField 
+                variant="filled"
                 margin="normal"
                 fullWidth
                 label="Post Title"
@@ -51,6 +53,7 @@ return (
                 onChange={onTitleChanged} 
             />
             <TextField
+                variant="filled"
                 margin="normal"
                 fullWidth
                 label="Post Content"
@@ -62,7 +65,15 @@ return (
                 value={content}
                 onChange={onContentChanged} 
             />
-<Button variant="contained" onClick={onSavePostClicked} disabled={!canSave}>
+<Button 
+variant="contained" 
+sx={{
+    backgroundColor: '#8b05fa', // Static background color
+    '&:hover': {
+      backgroundColor: '#8b05fa', // Disable hover effect
+    },
+  }} 
+onClick={onSavePostClicked} disabled={!canSave}>
     Save Post
 </Button>
         </form>

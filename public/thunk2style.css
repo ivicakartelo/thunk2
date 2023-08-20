@@ -3,18 +3,18 @@ body {
   /* font-family: 'Pacifico', cursive; */
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  font-size: 18;
+  font-size: 18px;
   line-height: 1.5;
   }
 
   .container{
     width: 90%;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 
   .distance {
-    margin-top: 80px;
+    margin-top: 20px;
   }
 
   h2 {
