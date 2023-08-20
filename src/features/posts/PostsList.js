@@ -32,10 +32,11 @@ const PostExcerpt = ({ post }) => {
             <Typography sx={{ mb: 1.5, fontFamily: 'Open Sans' }} color="text.secondary">
               Author
             </Typography>
-                        
+            <Typography variant="body1" style={{ fontFamily: 'Open Sans' }}>
             {paragraphs.map((paragraph, index) => (
             <p key={index} dangerouslySetInnerHTML={{ __html: paragraph }}></p>
   ))}
+            </Typography>
           </CardContent>
           <CardActions>
           {showEditForm && updateId === post.id ? (
