@@ -32,11 +32,13 @@ const onSavePostClicked = async () => {
     }
 }
 
+
+
 return (
     <section>
+
         <Typography variant="h2" component="div" style={{ fontFamily: 'Open Sans' }}>Add a New Post</Typography>
         <form>
-        
             <TextField 
                 margin="normal"
                 fullWidth
