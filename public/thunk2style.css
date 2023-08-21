@@ -21,3 +21,51 @@ body {
     font-size: 4rem;
     font-weight: 400;
   }
+
+  /* Card */
+
+  .card {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    font-size: 24px;
+}
+.card-content {
+  background-color: #000;
+  color: #fff;
+  font-size: 140px;
+  font-weight: 900;
+  line-height: .8;
+}
+.card-content-div {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top; /* Align the content at the top */ 
+  margin: 50px 0 300px 100px;
+  background-color: #2B3132;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 30px;
+}
+.card-content-div-right {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  width: 30%;
+  display: inline-block;
+  vertical-align: middle; /* Align the content at the top */
+  margin: 200px 0 0 50px;
+}
+card-right-inside {
+  font-size: 12px;
+}
