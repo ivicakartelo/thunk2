@@ -69,3 +69,46 @@ body {
 card-right-inside {
   font-size: 12px;
 }
+
+/* CardCSSGrid */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+  gap: 50px; /* Gap between items, adjust as needed */
+  padding: 50px; /* Add padding for better spacing */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #000;
+  color: #fff;
+  font-size: 140px;
+  font-weight: 900;
+  line-height: .8;
+}
+
+.grid-item {
+  width: 100%; /* Initially, items will take 100% width */
+  background-color: #f0f0f0;
+  padding: 50px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  background-color: #2B3132;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.grid-item-right {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  line-height: 1.5;
+  padding: 50px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Switch to single column layout */
+  }
+}

@@ -4,10 +4,12 @@ import ButtonAppBar from './ButtonAppBar'
 import Footer from './Footer'
 import BasicCard from './BasicCard'
 import CardHeader from './template/CardHeader'
+import CardCSSGrid from './template/CardCSSGrid'
 
 function App() {
     return (
         <>
+        <CardCSSGrid />
         <CardHeader />  
         <BasicCard />
         <ButtonAppBar />
