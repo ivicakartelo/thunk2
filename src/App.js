@@ -6,10 +6,12 @@ import BasicCard from './BasicCard'
 import CardHeader from './template/CardHeader'
 import CardCSSGrid from './template/CardCSSGrid'
 import CardCSSFlex from './template/CardCSSFlex'
+import CardCSSFlexOverlap from './template/CardCSSFlexOverlap'
 
 function App() {
     return (
         <>
+        <CardCSSFlexOverlap />
         <CardCSSFlex />
         <CardCSSGrid />
         <CardHeader />  

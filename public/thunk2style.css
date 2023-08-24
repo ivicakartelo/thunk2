@@ -155,3 +155,77 @@ card-right-inside {
   }
 }
 
+/* ================== CardCSSFlexOverlap =============== */
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.item {
+  width: 400px;
+  height: 400px;
+  background-color: lightblue;
+  border: 1px solid black;
+  margin: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.middle {
+  flex: 1;
+  height: 400px;
+  background-color: lightgray;
+  margin: 0 0px;
+  z-index: 0;
+}
+
+.overlap {
+  position: relative;
+  z-index: 1;
+}
+
+.shifted {
+  position: absolute;
+}
+
+.left .shifted {
+  left: calc(55% + 100px); /* Adjust left positioning */
+  top: 50px;
+  transform: translateX(-50%);
+}
+
+.left .item:nth-child(2) {
+  top: 200px;
+  right: 100px;
+}
+
+.right .shifted {
+  left: 55%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.right .item:nth-child(2) {
+  top: 200px;
+  left: -50px;
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .middle {
+    margin: 10px 0;
+  }
+}
