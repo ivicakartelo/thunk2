@@ -5,10 +5,12 @@ import Footer from './Footer'
 import BasicCard from './BasicCard'
 import CardHeader from './template/CardHeader'
 import CardCSSGrid from './template/CardCSSGrid'
+import CardCSSFlex from './template/CardCSSFlex'
 
 function App() {
     return (
         <>
+        <CardCSSFlex />
         <CardCSSGrid />
         <CardHeader />  
         <BasicCard />

@@ -22,7 +22,7 @@ body {
     font-weight: 400;
   }
 
-  /* Card */
+  /* ================== Card ======================== */
 
   .card {
     width: 100%;
@@ -70,7 +70,7 @@ card-right-inside {
   font-size: 12px;
 }
 
-/* CardCSSGrid */
+/* ================== CardCSSGrid =================== */
 
 .grid-container {
   display: grid;
@@ -112,3 +112,46 @@ card-right-inside {
     grid-template-columns: 1fr; /* Switch to single column layout */
   }
 }
+
+/* ================== CardCSSFlex =================== */
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to a new line on smaller screens */
+  padding: 50px; /* Add padding for better spacing */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #000;
+  color: #fff;
+  font-size: 140px;
+  font-weight: 900;
+  line-height: .8;
+}
+
+.flex-item {
+  flex-basis: 50%; /* Each item takes up 50% of the container's width */
+  width: 100%; /* Initially, items will take 100% width */
+  background-color: #f0f0f0;
+  padding: 50px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  background-color: #2B3132;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.flex-item-right {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  line-height: 1.5;
+  padding: 50px;
+}
+
+@media (max-width: 768px) {
+  .flex-item {
+    flex-basis: 100%; /* On smaller screens, each item takes up 100% width */
+  }
+}
+
