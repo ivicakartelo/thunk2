@@ -173,12 +173,17 @@ card-right-inside {
 
 .item {
   width: 400px;
-  height: 400px;
+  height: 250px;
   background-color: lightblue;
   border: 1px solid black;
   margin: 50px;
   position: relative;
   z-index: 1;
+}
+
+.item img {
+  height: 100%;
+  width: 100%;
 }
 
 .middle {
@@ -187,6 +192,11 @@ card-right-inside {
   background-color: lightgray;
   margin: 0 0px;
   z-index: 0;
+}
+
+.middle img {
+  height: 100%;
+  width: 100%;
 }
 
 .overlap {
